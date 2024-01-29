@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+}
+
+//Couleurs
+$main-color: #FF6060;
+$secondary-color: white;
+
+body {
+  margin: auto;
+  max-width: 1440px;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+.header {
+  padding:50px 100px;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  .logokasa {
+    width: 210px;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: horizontal;
+    gap: 50px;
+    .navbar__link {
+      color: $main-color;
+      text-decoration: none;
+    }
+    .navbar__link:hover {
+      text-decoration: underline;
+    }
+   }
+}
+   
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
+  gap: 29px;
+  .footer__logo {
+    width: 122px;
+  }
+  .footer__copyright {
+    color: $secondary-color;
+    font-size: 26px;
+  }
+}
