@@ -4,7 +4,7 @@ function Banner() {
   return (
     <div className="banner">
       <img
-        className="coast"
+        className="banner__img"
         src={coast}
         alt="un bord de mer agité et montagneux"
       />

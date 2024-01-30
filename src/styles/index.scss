@@ -43,7 +43,24 @@ body {
     }
    }
 }
-   
+
+.banner {
+  display: flex;
+  padding: 0px 100px 50px 100px;
+  max-width: 1240px;
+  
+
+   .banner__img {
+    filter: brightness(70%);
+    width: 100%;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 25px;
+  
+    
+  }
+}
+
 .footer {
   background-color: black;
   display: flex;
