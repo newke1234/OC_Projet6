@@ -9,6 +9,7 @@
 //Couleurs
 $main-color: #FF6060;
 $secondary-color: white;
+$third-color: #F6F6F6;
 
 body {
   margin: auto;
@@ -19,7 +20,6 @@ body {
   line-height: 51px;
   letter-spacing: 0em;
   text-align: left;
-  
 }
 
 .header {
@@ -58,6 +58,41 @@ body {
     border-radius: 25px;
   
     
+  }
+}
+
+.cards {
+  margin: 0px 100px 50px 100px;
+  padding: 50px;
+  background-color:  $third-color;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  flex-shrink: 0;
+  gap: 80px;
+  
+  .cards__house {
+    position: relative;
+    width: 22%;
+   
+    
+    .cards__image {
+      // position: relative;
+      width: 100%;
+      border-radius: 25px;
+      object-fit: cover;
+      
+      
+    } 
+    .cards__title {
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+      font-size: 18px;
+      color: $secondary-color;
+    }
   }
 }
 
