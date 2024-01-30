@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  padding:50px 100px;
+  margin:50px 100px;
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -46,8 +46,10 @@ body {
 
 .banner {
   display: flex;
-  padding: 0px 100px 50px 100px;
+  margin: 0px 100px 50px 100px;
   max-width: 1240px;
+  width: 100%;
+  background-color: #FF6060;
   
 
    .banner__img {
@@ -71,7 +73,7 @@ body {
   justify-content: center;
   flex-direction: row;
   flex-shrink: 0;
-  gap: 80px;
+  // gap: 80px;
   
   .cards__house {
     position: relative;
