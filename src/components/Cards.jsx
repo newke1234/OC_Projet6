@@ -13,6 +13,7 @@ function Cards() {
       {jsonData.map((house, id) => (
         <div key={id} className="cards__house">
           <img className="cards__image" src={house.cover} alt={house.title} />
+          <div className="cards__gradient"></div>
           <div className="cards__title">{house.title}</div>
         </div>
       ))}
