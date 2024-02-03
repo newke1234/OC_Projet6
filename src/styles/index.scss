@@ -15,7 +15,7 @@ body {
   margin: auto;
   max-width: 1440px;
   font-family: Montserrat;
-  font-size: 36px;
+  font-size: 2.4em;
   font-weight: 500;
   line-height: 51px;
   letter-spacing: 0em;
@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  margin:50px 100px;
+  margin: 50px 100px;
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -35,6 +35,7 @@ body {
     display: flex;
     flex-direction: horizontal;
     gap: 50px;
+    font-size: 0.6em;
 
     .navbar__link {
       color: $main-color;
@@ -49,9 +50,7 @@ body {
 .banner {
   position: relative;
   display: flex;
-  margin: 0px 100px 50px 100px;
-  max-width: 1240px;
-  width: 100%;
+  margin: 50px 100px;
 
   .banner__img {
     filter: brightness(70%);
@@ -63,7 +62,7 @@ body {
 
   .banner__title {
     position: absolute;
-    font-size: 48px;
+    font-size: 1.5em;
     color: $secondary-color;
     top: 50%;
     left: 50%;
@@ -82,30 +81,30 @@ body {
   padding: 50px;
   background-color:  $third-color;
   border-radius: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  flex-direction: row;
-  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 50px;
 
   .cards__house {
     position: relative;
-    width: 30%;
-
+   
     .cards__image {
       position: relative;
       width: 100%;
       border-radius: 25px;
       object-fit: cover;     
     } 
+    .card_bg {
+      background-color: rgba($color: #000000, $alpha: 0.5);
+    }
     .cards__title {
       position: absolute;
       line-height: 1.3em;
       left: 10px;
       bottom: 20px;
-      font-size: 18px;
+      font-size: 0.5em;
       color: $secondary-color;
+      text-shadow: 1px 1px 1px black;
     }
   }
 }
@@ -128,3 +127,54 @@ body {
     font-size: 26px;
   }
 }
+
+@media only screen and (max-width: 767px) {
+
+  .header {
+    margin:20px 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+  
+    .logokasa {
+      width: 145px;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: horizontal;
+      gap: 10px;
+      
+      .navbar__link {
+        color: $main-color;
+        text-decoration: none;
+        // font-size: 0.5em;
+      }
+      .navbar__link:hover {
+        text-decoration: underline;
+      }
+     }
+  }
+
+  .banner {
+    margin: 0px 20px 20px 20px; /* Ajustez les marges pour les mobiles */
+    max-width: 767px;
+    .banner__img {
+      height: 150px; /* Ajustez la hauteur pour les mobiles si nécessaire */
+    }
+    .banner__title {
+      font-size: 24px; /* Ajustez la taille de police pour les mobiles */
+      line-height: 120%; /* Ajustez la hauteur de ligne pour les mobiles si nécessaire */
+    }
+  }
+
+  .cards {
+    margin: 0px 20px 0px 20px;
+    }
+  
+}
+
+
+  
+
+ 
