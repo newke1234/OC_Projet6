@@ -1,0 +1,49 @@
+$boxColor: #FF6060;
+$main-color: black;
+$secondary-color: white;
+$third-color: #F6F6F6;
+$border-radius: 5px;
+
+.animated-box-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Espacement entre les boîtes */
+}
+
+.box {
+  cursor: pointer;
+  transition: max-height 0.3s ease; /* Ajout de la transition */
+  overflow: hidden;
+  margin-bottom: 0; /* Ajustement de la marge inférieure */
+}
+
+.box-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $boxColor;
+  border-radius: $border-radius;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: $secondary-color;
+  padding: 0 10px 0 10px;
+  position: relative; /* Ajout de la position relative */
+  z-index: 2; /* Définir un z-index plus élevé */
+}
+
+.box-text-container {
+  font-size: 0.5em;
+  line-height: 25px;
+  transition: transform 0.3s ease, margin-top 0.3s ease;; /* Ajout de la transition pour la hauteur, l'opacité et la transformation */
+  background-color: $third-color; /* Ajout du fond blanc */
+  border-radius: 5px; /* Ajout du rayon de bordure */
+  padding: 10px; /* Ajout du remplissage */
+  transform: translateY(-100%); /* Déplacer le texte vers le haut pour le rendre invisible */
+  z-index: 1; /* Définir un z-index inférieur */
+  margin-top: -50px; /* Ajustement de la marge supérieure */
+}
+
+.box.open .box-text-container {
+  transform: translateY(0); /* Déplacer le texte vers le bas pour le rendre visible */
+  margin-top: 0; /* Réinitialiser la marge supérieure */
+}
