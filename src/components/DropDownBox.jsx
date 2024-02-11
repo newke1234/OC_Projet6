@@ -31,7 +31,7 @@ function AnimatedBoxGroup() {
           className={`box ${isBoxOpen(index) ? 'open' : ''}`}
           onClick={() => toggleBox(index)}
         >
-          <div className="box-title">
+          <div className="box__title">
             <div>{box.boxtitle}</div>
             <div>
               <FontAwesomeIcon
@@ -39,8 +39,8 @@ function AnimatedBoxGroup() {
               />
             </div>
           </div>
-          <div className="box-text-container">
-            <div className="box-text">{box.boxtext}</div>
+          <div className="box__text-container">
+            <div className="box__text">{box.boxtext}</div>
           </div>
         </div>
       ))}
