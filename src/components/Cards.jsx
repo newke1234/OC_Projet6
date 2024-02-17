@@ -5,11 +5,14 @@ import housesData from '../datas/houses.json'
 function Cards() {
   const [jsonData] = useState(housesData)
 
+  // Vérifiez si l'ID du logement existe dans les données JSON
+  const isHouseIdValid = (id) => jsonData.some((house) => house.id === id)
+
   return (
     <ul className="cards">
       {jsonData.map((house, id) => (
         <li key={id} className="cards__house">
-          <Link to={{ pathname: `/house/${house.id}`, state: { house } }}>
+          <Link to={{ pathname: `/house/${house.id}` }}>
             <img
               className="cards__house__image"
               src={house.cover}
@@ -20,6 +23,8 @@ function Cards() {
           </Link>
         </li>
       ))}
+      {/* Si aucun logement n'a été trouvé pour un ID donné, redirigez directement vers la page 404 */}
+      {!isHouseIdValid && <Link to="/404" style={{ display: 'none' }} />}
     </ul>
   )
 }
