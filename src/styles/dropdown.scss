@@ -1,8 +1,4 @@
-$boxColor: #FF6060;
-$main-color: black;
-$secondary-color: white;
-$third-color: #F6F6F6;
-$border-radius: 5px;
+@import 'variables';
 
 .animated-box-group {
   max-width: 1240px;
@@ -20,33 +16,33 @@ $border-radius: 5px;
     flex-direction: row;
     justify-content: space-between;
     background-color: $boxColor;
-    border-radius: $border-radius;
+    border-radius: $box-border-radius;
     font-weight: bold;
     font-size: 0.8em;
     color: $secondary-color;
     padding: 0 10px 0 10px;
-    position: relative; /* Ajout de la position relative */
-    z-index: 2; /* Définir un z-index plus élevé */
+    position: relative; 
+    z-index: 2; 
   }
   
   &__text-container {
     font-size: 0.5em;
     line-height: 25px;
-    transition: transform 0.3s ease, margin-top 0.3s ease;; /* Ajout de la transition pour la hauteur, l'opacité et la transformation */
-    background-color: $third-color; /* Ajout du fond blanc */
-    border-radius: 5px; /* Ajout du rayon de bordure */
-    padding: 10px; /* Ajout du remplissage */
-    transform: translateY(-100%); /* Déplacer le texte vers le haut pour le rendre invisible */
-    z-index: 1; /* Définir un z-index inférieur */
+    transition: transform 0.3s ease, margin-top 0.3s ease;
+    background-color: $third-color; 
+    border-radius: $box-border-radius; 
+    padding: 10px;
+    transform: translateY(-100%); 
+    z-index: 1; 
     margin-bottom: 20px;
-    margin-top: -50px; /* Ajustement de la marge supérieure */
+    margin-top: -50px; 
   }
   
   &.open {
     .box__text-container {
-      transform: translateY(0); /* Déplacer le texte vers le bas pour le rendre visible */
+      transform: translateY(0); 
       margin-bottom: 20px;
-      margin-top: 0; /* Réinitialiser la marge supérieure */
+      margin-top: 0; 
     }
   }
 }

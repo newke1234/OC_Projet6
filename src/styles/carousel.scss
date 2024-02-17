@@ -1,0 +1,28 @@
+.house-carousel {
+    position: relative;
+    max-width: 1240px;
+    
+
+  }
+  
+  .house-carousel__image {
+    width: 100%;
+  }
+  
+  .fa-chevron-left,
+  .fa-chevron-right {
+    position: absolute;
+    font-size: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* Ajoutez la couleur de l'icône */
+    cursor: pointer; /* Ajoutez un curseur pointer pour indiquer qu'il est cliquable */
+  }
+  
+  .fa-chevron-left {
+    left: 10px; /* Ajustez la position gauche selon vos besoins */
+  }
+  
+  .fa-chevron-right {
+    right: 10px; /* Ajustez la position droite selon vos besoins */
+  }
