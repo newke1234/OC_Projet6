@@ -18,12 +18,10 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="*" element={<Error />} />
         <Route path="/house/:id" element={<House />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </Router>
   </React.StrictMode>,
 )
-
-// reportWebVitals()
