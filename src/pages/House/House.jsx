@@ -1,8 +1,9 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import housesData from '../../datas/houses.json'
 import HouseCarousel from '../../components/HouseCarousel'
-import { Navigate } from 'react-router-dom'
+import HouseInfos from '../../components/HouseInfos'
+import '../../styles/house.scss'
 
 function House() {
   const { id } = useParams()
@@ -14,10 +15,9 @@ function House() {
   }
 
   return (
-    <div className="house-details">
-      <h2>{house.title}</h2>
+    <div className="house">
       <HouseCarousel pictures={house.pictures} />
-      {/* Affichez le reste des informations de la maison ici */}
+      <HouseInfos house={house} />
     </div>
   )
 }

@@ -30,7 +30,6 @@ body {
 
   .navbar {
     display: flex;
-    flex-direction: horizontal;
     gap: 50px;
     font-size: 0.6em;
     &__link {
@@ -134,7 +133,7 @@ body {
 
 .footer {
   max-width: 3160px;
-  // margin-top: 50px;
+  margin-top: 50px;
   background-color: black;
   display: flex;
   flex-direction: column;
@@ -239,8 +238,3 @@ body {
     }
   }
 }
-
-
-  
-
- 

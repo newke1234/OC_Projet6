@@ -1,0 +1,81 @@
+  
+ @import 'variables';
+ 
+ .house {
+    max-width: 1240px;
+    margin: auto;
+    color: $boxColor;
+   
+    .house-infos-line1 {
+    
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+    
+        &__title {
+            color:$boxColor;
+            font-size: 0.9em;
+            font-weight: 100;
+        }
+
+        &__location{
+            margin-top: -10px;
+            color: $main-color;
+            font-size: 0.5em;
+        }
+
+        &__host {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            font-size: 0.55em;
+            text-align: end;
+            justify-content: flex-end;
+
+            img {
+                background-color: #C4C4C4;
+                border-radius: 50%;
+                width: auto; /* Utilisez une largeur automatique */
+                height: 70px; /* Définissez une hauteur explicite */
+                object-fit: cover;
+            }
+      
+        }
+    }
+    .house-infos-line2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -10px;
+        
+    
+        &__tags {
+          display: flex;
+          align-items: center;
+          gap: 5px;      
+        }
+    
+        &__tags li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            background-color: $boxColor;
+            color: $secondary-color;
+            padding: 0 10px;
+          border-radius: 10px;
+          font-size: 0.4em;
+          min-width: 115px;
+          height: 25px;
+        }
+    
+        &__rating {
+          display: flex;
+          font-size: 0.6em;
+        }
+
+    }
+}
+.star-icon {
+    margin-left:12px;
+}
