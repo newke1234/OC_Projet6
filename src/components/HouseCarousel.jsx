@@ -4,7 +4,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
-import '../styles/carousel.scss'
+import '../styles/houseCarousel.scss'
 
 function HouseCarousel({ pictures }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
