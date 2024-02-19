@@ -1,12 +1,12 @@
 import Banner from '../../components/Banner'
-import AnimatedBoxGroup from '../../components/DropDownBox'
+import DropDownBox from '../../components/DropDownBox'
 import '../../styles/dropdown.scss'
 
 function About() {
   return (
     <div>
       <Banner />
-      <AnimatedBoxGroup />
+      <DropDownBox />
     </div>
   )
 }
