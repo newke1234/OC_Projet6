@@ -10,6 +10,8 @@
 .box {
   cursor: pointer;
   overflow: hidden;
+  min-height: 50px;
+  margin-bottom: 25px;
   
   &__title {
     display: flex;
@@ -26,22 +28,23 @@
   }
   
   &__text-container {
+    color: $main-color;
     font-size: 0.5em;
     line-height: 25px;
-    transition: transform 0.3s ease, margin-top 0.3s ease;
+    transition: transform 0.3s ease-in-out, margin-top 0.3s ease-in-out;
     background-color: $third-color; 
     border-radius: $box-border-radius; 
     padding: 10px;
     transform: translateY(-100%); 
     z-index: 1; 
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     margin-top: -50px; 
   }
   
   &.open {
     .box__text-container {
       transform: translateY(0); 
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
       margin-top: 0; 
     }
   }
