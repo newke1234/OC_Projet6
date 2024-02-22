@@ -1,0 +1,27 @@
+@import 'variables';
+
+.errorContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    margin: 180px 0; 
+    gap: 100px;
+
+    &__quatrecentquatre {
+        color: $boxColor;
+        font-size: 8em;
+        font-weight: 700;
+
+    }
+    &__oups {
+        color: $boxColor;
+        margin-top: 70px;
+        font-size: 1em;
+    }
+    &__homeLink{
+        color: $main-color;
+        font-size: 0.5em;
+    }
+    
+}
