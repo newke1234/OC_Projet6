@@ -4,12 +4,9 @@ import mountains from '../assets/banner/mountains.jpg'
 
 import { useLocation } from 'react-router-dom'
 
-// get our fontawesome imports
-
 const Banner = () => {
   const location = useLocation()
 
-  // Function to determine which image to render based on the URL
   const getImageForURL = () => {
     return location.pathname.includes('About') ? mountains : coast
   }
