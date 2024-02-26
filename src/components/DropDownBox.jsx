@@ -1,7 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import '../styles/dropdown.scss'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
