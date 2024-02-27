@@ -8,9 +8,10 @@ function About() {
   return (
     <div>
       <Banner />
-      <div className="animated-box-group">
+      <div className="about-box-group">
         {jsonData.map((box, index) => (
           <DropDownBox
+            page="about"
             key={index}
             title={box.boxtitle}
             content={[box.boxtext]}
