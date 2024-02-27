@@ -131,26 +131,6 @@ body {
   }
 }
 
-.footer {
-  max-width: 3160px;
-  margin-top: 50px;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 210px;
-  gap: 29px;
-
-  &__logo {
-    width: 122px;
-  }
-  &__copyright {
-    color: $secondary-color;
-    font-size: 0.75em;
-  }
-}
-
 @media only screen and (max-width: 767px) {
 
   .header {
