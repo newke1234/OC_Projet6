@@ -5,12 +5,13 @@ import HouseCarousel from '../../components/HouseCarousel'
 import HouseInfos from '../../components/HouseInfos'
 import DropDownBox from '../../components/DropDownBox'
 import '../../styles/house.scss'
+import '../../styles/dropdown-house.scss'
 
 function House() {
   const { id } = useParams()
   const house = housesData.find((house) => house.id === id)
 
-  // Si aucun logement n'est trouvé pour l'ID spécifié, redirigez vers la page 404
+  // Si aucun logement n'est trouvé pour l'ID spécifié, redirige vers la page 404
   if (!house) {
     return <Navigate to="/404" />
   }
@@ -19,8 +20,18 @@ function House() {
     <div className="house">
       <HouseCarousel pictures={house.pictures} />
       <HouseInfos house={house} />
-      <DropDownBox title="Description" content={[house.description]} />
-      <DropDownBox title="Équipements" content={house.equipments} />
+      <div className="house-box-group">
+        <DropDownBox
+          page="house-description"
+          title="Description"
+          content={[house.description]}
+        />
+        <DropDownBox
+          page="house-equip"
+          title="Équipements"
+          content={house.equipments}
+        />
+      </div>
     </div>
   )
 }
