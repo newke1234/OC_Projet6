@@ -8,6 +8,7 @@ import House from './pages/House/House'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import './styles/index.scss'
+import './styles/footer.scss'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
