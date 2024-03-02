@@ -6,16 +6,18 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import '../styles/houseCarousel.scss'
 
-function HouseCarousel({ pictures }) {
+function HouseCarousel({ pictures, imgalt }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const goToPreviousImage = () => {
+    // Fleche de navigation gauche
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? pictures.length - 1 : prevIndex - 1,
     )
   }
 
   const goToNextImage = () => {
+    // Fleche de navigation droite
     setCurrentImageIndex((prevIndex) =>
       prevIndex === pictures.length - 1 ? 0 : prevIndex + 1,
     )
@@ -27,7 +29,7 @@ function HouseCarousel({ pictures }) {
       <img
         className="house-carousel__image"
         src={pictures[currentImageIndex]}
-        alt="House"
+        alt={imgalt}
       />
       <FontAwesomeIcon icon={faChevronRight} onClick={goToNextImage} />
     </div>

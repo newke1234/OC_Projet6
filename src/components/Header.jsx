@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import logokasa from '../assets/logo-kasa.png'
 
 function Header() {
-  const location = useLocation()
+  const location = useLocation() // Hook pour la barre de navigation  (pour souligner le lien de la page sur laquelle on se trouve)
 
   return (
     <div className="header">

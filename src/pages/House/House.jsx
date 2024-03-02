@@ -18,7 +18,7 @@ function House() {
 
   return (
     <div className="house">
-      <HouseCarousel pictures={house.pictures} />
+      <HouseCarousel pictures={house.pictures} imgalt={house.title} />
       <HouseInfos house={house} />
       <div className="house-box-group">
         <DropDownBox

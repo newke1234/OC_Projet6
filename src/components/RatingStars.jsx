@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 function RatingStars({ rating }) {
-  const totalStars = 5
-  const fullStars = Math.floor(rating)
+  // Affichage des étoiles
+  const totalStars = 5 // Nombre d'etoiles a afficher
+  const fullStars = Math.floor(rating) // Calcul Nombre d'étoiles pleines (rouges) a afficher
 
   return (
     <div>

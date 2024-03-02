@@ -3,6 +3,7 @@ import RatingStars from './RatingStars'
 import '../styles/house.scss'
 
 function HouseInfos({ house }) {
+  // Affiche les infos détaillées pour le logement selectionné
   return (
     <div className="house-infos">
       <div className="house-infos-line1">
@@ -24,7 +25,7 @@ function HouseInfos({ house }) {
         </ul>
         <div className="house-infos-line2__rating">
           {/* Affichage du rating sous forme d'étoiles */}
-          <RatingStars rating={parseFloat(house.rating)} />
+          <RatingStars rating={house.rating} />
         </div>
       </div>
     </div>

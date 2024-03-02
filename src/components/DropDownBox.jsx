@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
+// Composant pour les boites déroulantes (pages House et About)
 function DropDownBox({ title, content, page }) {
   const [isOpen, setIsOpen] = useState(false)
 
