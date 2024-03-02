@@ -23,7 +23,7 @@ function Cards() {
           </Link>
         </li>
       ))}
-      {/* Si aucun logement n'a été trouvé pour un ID donné, redirigez directement vers la page 404 */}
+      {/* Si aucun logement n'a été trouvé pour un ID donné, rediriger directement vers la page 404 */}
       {!isHouseIdValid && <Link to="/404" style={{ display: 'none' }} />}
     </ul>
   )
