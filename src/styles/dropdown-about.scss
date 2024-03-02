@@ -1,36 +1,35 @@
 @import 'variables';
 
-.animated-box-group {
+.about-box-group {
   display: flex;
   flex-direction: column;
   max-width: 1240px;
   width: 70%;
   margin: auto;
-  // margin-bottom: 25px;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
+.about-box {
+  justify-content: space-around;
   cursor: pointer;
   overflow: hidden;
   min-height: 60px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
-  .box__title {
+  &__title {
     letter-spacing: 1.2px;
+    display: flex;
     justify-content: space-between;
     background-color: $boxColor;
     border-radius: 5px;
     font-weight: bold;
     font-size: 0.6em;
     color: $secondary-color;
-    padding: 0 10px 0 10px;
+    padding: 5px 20px 5px 15px;
     position: relative; 
     z-index: 2; 
   }
   
-  .box__text-container {
+  &__text-container {
    
     color: $main-color;
     font-size: 0.5em;
@@ -46,7 +45,7 @@
   }
   
   &.open {
-    .box__text-container {
+    .about-box__text-container {
       transform: translateY(0); 
       margin-bottom: 20px;
       margin-top: 0; 
@@ -56,21 +55,20 @@
 
 @media only screen and (max-width: 767px) {
 
-  .animated-box-group {
+  .about-box-group {
     max-width: none;
     width: 80%;
     margin-top: 50px;
-    margin-bottom: -50px;
   }
 
-  .box {
+  .about-box {
 
     &__text-container {
-      margin-bottom: -35px;
+      margin-bottom: -25px;
     }
 
     &.open {
-      .box__text-container {
+      .about-box__text-container {
         margin-bottom: 10px;
       }
     }

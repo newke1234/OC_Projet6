@@ -73,9 +73,20 @@
           display: flex;
           font-size: 0.6em;
         }
-
+    
     }
 }
 .star-icon {
     margin-left:12px;
 }
+
+.house-box-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 1240px;
+    width: 100%;
+    gap:70px;
+    margin: auto;
+    // margin-bottom: 25px;
+  }
