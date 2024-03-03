@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import housesData from '../datas/houses.json'
+import '../styles/cards.scss'
 
 function Cards() {
   const [jsonData] = useState(housesData)
