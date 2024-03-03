@@ -11,6 +11,10 @@
   margin-bottom: 25px;
   overflow: hidden;
 
+  .fa-chevron-up, .fa-chevron-down {
+    font-size: 1.25em;
+  }
+
     &__title {
     letter-spacing: 1.2px;
     display: flex;
