@@ -3,17 +3,22 @@
 .about-box-group {
   display: flex;
   flex-direction: column;
-  max-width: 1240px;
-  width: 70%;
-  margin: auto;
+  width: 100%;
+  align-items:center;
+  justify-content: center;
 }
 
 .about-box {
-  justify-content: space-around;
+
   cursor: pointer;
   overflow: hidden;
   min-height: 60px;
   margin-bottom: 20px;
+  width: 70%;
+
+  .fa-chevron-up, .fa-chevron-down {
+    font-size: 1.25em;
+  }
 
   &__title {
     letter-spacing: 1.2px;
@@ -56,20 +61,34 @@
 @media only screen and (max-width: 767px) {
 
   .about-box-group {
-    max-width: none;
-    width: 80%;
-    margin-top: 50px;
+    margin: 30px 0px 20px 0px;
+    // width: 100%;
   }
 
   .about-box {
+    margin: 0 20px 20px 20px;
+    width:90%;
+    min-height: 32px;
+    border-radius:5px;
+    
+    .fa-chevron-up, .fa-chevron-down {
+      font-size: 1.5em;
+    }
 
+    &__title {
+      margin: -8px -2px;
+      align-items: flex-start;
+      font-size: .37em;
+      padding: 0px 20px 0px 15px;
+    }
     &__text-container {
+      font-size: .37em;
       margin-bottom: -25px;
     }
 
     &.open {
       .about-box__text-container {
-        margin-bottom: 10px;
+        margin-bottom: 0px;
       }
     }
   }
