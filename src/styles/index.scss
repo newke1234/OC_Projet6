@@ -45,33 +45,29 @@ body {
    }
    @media only screen and (max-width: 767px) {
 
-    .header {
-      margin:20px 20px;
-      display: flex;
-      justify-content:space-between;
-      align-items: center;
-    
-      .logokasa {
-        width: 145px;
+    margin:20px 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  
+    .logokasa {
+      width: 145px;
+    }
+    .navbar {
+      gap: 26px;
+      text-transform: uppercase;
+      
+      &__link {
+        color: $main-color;
+        text-decoration: none;
+        font-size: 0.5em;
       }
-      .navbar {
-        display: flex;
-        flex-direction: horizontal;
-        gap: 40px;
-        
-        &__link {
-          color: $main-color;
-          text-decoration: none;
-          font-size: 0.75em;
-        }
-        &__link:hover {
-          text-decoration: underline;
-        }
+      &__link:hover {
+        text-decoration: underline;
       }
     }
   }
 }
-
 
 
 .footer {
@@ -98,7 +94,7 @@ body {
 
     &__copyright {
       margin-top: -20px;
-      width:20%;
+      width:30%;
       text-align: center;
       color: $secondary-color;
       font-size: 0.35em;
