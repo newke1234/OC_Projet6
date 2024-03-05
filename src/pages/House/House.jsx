@@ -22,12 +22,12 @@ function House() {
       <HouseInfos house={house} />
       <div className="house-box-group">
         <DropDownBox
-          page="house-description"
+          page="house"
           title="Description"
           content={[house.description]}
         />
         <DropDownBox
-          page="house-equip"
+          page="house"
           title="Équipements"
           content={house.equipments}
         />
